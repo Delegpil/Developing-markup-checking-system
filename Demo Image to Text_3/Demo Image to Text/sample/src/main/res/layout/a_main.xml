@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <com.theartofdev.edmodo.cropper.CropImageView
+        android:id="@+id/CropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:minHeight="100dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:minHeight="200dp"
+        android:textColor="#132b35"
+        android:layout_weight="0.39" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:id="@+id/textView"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Тестийн зураг дарах"
+        android:onClick="onLoadImageClick"
+        android:background="#00a2d3"
+        android:layout_margin="3dp"
+        android:layout_weight="0.1"
+        android:id="@+id/button3" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Өгөгдөл шалгах"
+        android:onClick="onCropImageClick"
+        android:minHeight="300dp"
+        android:background="#00a2d3"
+        android:layout_marginTop="4dp"
+        android:layout_margin="3dp"
+        android:layout_weight="0.1"/>
+
+    <Button
+        android:id="@+id/dbbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="0.1"
+        android:background="#00a2d3"
+        android:text="Серверлүү илгээх" />
+
+</LinearLayout>
